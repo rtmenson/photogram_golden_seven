@@ -1,0 +1,23 @@
+<h1> Hi </h1>
+<p>
+  <%= @the_caption %>
+</p>
+<img src= "<%= @the_image_url%>" />
+
+<p>
+  <%= time_ago_in_words(@updated_at) %>
+</p>
+
+<!-- strftime("%a %e %R") -->
+
+<a href="/photos/">
+  Go back
+</a>
+
+<a href="/photos/<%= @p.id%>/edit">
+  Edit
+</a>
+
+<a href="/delete_photo/<%= @p.id%>">
+  Delete
+</a>
